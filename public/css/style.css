@@ -1,0 +1,114 @@
+/* Navbar'ı özelleştirelim */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Varela Round", sans-serif;
+}
+
+.navbar {
+  background-color: #003366; /* Eskişehir Büyükşehir Belediyesi'nin renklerinden biri olan mavi */
+}
+
+/* Navbar metin rengi */
+.navbar-brand,
+.nav-link {
+  color: #fff !important;
+}
+
+/* Navbar linklerinin üzerine gelindiğinde renk değişimi */
+.nav-link:hover {
+  color: #ffcc00 !important; /* Sarı renk hover efekti */
+}
+
+/* Aktif link rengi */
+.nav-item .nav-link.active {
+  font-weight: bold;
+  
+}
+
+/* Mobil uyumlu navbar */
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+  }
+}
+.carousel-item img {
+  height: 500px; /* Örneğin, sabit bir yükseklik belirleyin */
+  object-fit: cover; /* Veya contain */
+}
+
+body {
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #005b99, #ffffff);
+}
+.login-container {
+  display: flex;
+  width: 1000px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+}
+.login-left {
+  flex: 1;
+  background: url("https://source.unsplash.com/400x400/?team,office")
+    center/cover;
+  position: relative;
+}
+.login-left::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background: rgba(63, 135, 166, 0.8);
+}
+.login-left .quote {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.login-right {
+  flex: 1;
+  padding: 40px;
+}
+
+.mid {
+  margin-top: 100px;
+  margin-left: 300px;
+}
+
+.bg-new {
+  background: linear-gradient(to right, #1b3c90, #005b99);
+}
+
+.hover1:hover {
+  background-color: #c3c2c0;
+  color: #003366;
+  border-radius: 1px solid;
+}
+
+.linkia {
+  margin-top: 1.5em;
+  border-radius: 50%;
+}
+
+.passwrd:hover {
+  color: #003366 !important;
+}
+.yeni{
+  background-color: #018B90 !important;
+}
+

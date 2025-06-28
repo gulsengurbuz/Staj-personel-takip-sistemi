@@ -1,0 +1,177 @@
+/* Custom styles beyond Bootstrap */
+
+/* Status badges */
+.badge-pending {
+  background-color: #fff3cd;
+  color: #856404;
+  font-weight: 500;
+  padding: 0.35em 0.65em;
+  border-radius: 0.25rem;
+}
+
+.badge-approved {
+  background-color: #d1e7dd;
+  color: #0f5132;
+  font-weight: 500;
+  padding: 0.35em 0.65em;
+  border-radius: 0.25rem;
+}
+
+.badge-rejected {
+  background-color: #f8d7da;
+  color: #842029;
+  font-weight: 500;
+  padding: 0.35em 0.65em;
+  border-radius: 0.25rem;
+}
+
+/* Permission type badges */
+.permission-type {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35em 0.65em;
+  font-size: 0.85em;
+  font-weight: 500;
+  border-radius: 0.25rem;
+}
+
+.permission-annual {
+  background-color: rgba(13, 110, 253, 0.1);
+  color: #0d6efd;
+}
+
+.permission-sick {
+  background-color: rgba(108, 117, 125, 0.1);
+  color: #6c757d;
+}
+
+.permission-maternity {
+  background-color: rgba(214, 51, 132, 0.1);
+  color: #d63384;
+}
+
+.permission-marriage {
+  background-color: rgba(111, 66, 193, 0.1);
+  color: #6f42c1;
+}
+
+.permission-bereavement {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #212529;
+}
+
+.permission-unpaid {
+  background-color: rgba(255, 193, 7, 0.1);
+  color: #ffc107;
+}
+
+/* Table styles */
+.table th {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.table td {
+  vertical-align: middle;
+}
+
+/* Card styles */
+.card {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  border-radius: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.card-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Permission details styles */
+.permission-detail-row {
+  display: flex;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding-bottom: 1rem;
+}
+
+.permission-detail-row:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.permission-detail-label {
+  font-weight: 600;
+  min-width: 150px;
+}
+
+.permission-detail-value {
+  flex: 1;
+}
+
+.permission-timeline {
+  position: relative;
+  padding-left: 30px;
+  margin-top: 2rem;
+}
+
+.permission-timeline-item {
+  position: relative;
+  padding-bottom: 1.5rem;
+}
+
+.permission-timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.permission-timeline-item:before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #0d6efd;
+  z-index: 1;
+}
+
+.permission-timeline-item:after {
+  content: "";
+  position: absolute;
+  left: -23px;
+  top: 15px;
+  width: 2px;
+  height: calc(100% - 15px);
+  background-color: #dee2e6;
+}
+
+.permission-timeline-item:last-child:after {
+  display: none;
+}
+
+.permission-timeline-date {
+  font-size: 0.85rem;
+  color: #6c757d;
+  margin-bottom: 0.25rem;
+}
+
+.permission-timeline-title {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.permission-timeline-description {
+  font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .permission-detail-row {
+    flex-direction: column;
+  }
+
+  .permission-detail-label {
+    margin-bottom: 0.5rem;
+  }
+}

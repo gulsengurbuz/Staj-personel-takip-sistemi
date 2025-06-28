@@ -1,0 +1,42 @@
+.otp-inputs {
+  display: flex;
+  gap: 10px;
+  justify-content: center; /* Inputları yatayda ortalar */
+  margin-top: 20px; /* Üstten biraz boşluk bırakın */
+}
+
+.otp-field {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 20px; /* Yazı boyutunu biraz daha küçük tutabilirsiniz */
+  font-weight: bold;
+  border: 2px solid #007bff; /* Canlı mavi sınır */
+  border-radius: 10px; /* Yuvarlak köşeler */
+  background-color: #fff; /* Beyaz arka plan */
+  transition: all 0.3s ease; /* Geçiş animasyonu */
+  color: #333; /* Yazı rengi */
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.2); /* Hafif mavi gölge */
+  padding: 10px; /* İç alanı biraz artırarak daha dolgun görünmesini sağlarız */
+}
+
+.otp-field:focus {
+  border-color: #0056b3; /* Focus rengi daha koyu mavi */
+  background-color: #e6f7ff; /* Focus anında açık mavi arka plan */
+  box-shadow: 0 0 10px rgba(0, 86, 179, 0.5); /* Focus sırasında daha belirgin gölge */
+}
+
+.otp-inputs .otp-field::placeholder {
+  color: #aaa; /* Placeholder rengini daha soluk yap */
+}
+
+.otp-inputs .otp-field:invalid {
+  border-color: #f44336; /* Geçersiz girilen değer kırmızı sınır */
+}
+
+.otp-inputs .otp-field:disabled {
+  background-color: #f7f7f7; /* Devre dışı bırakılmış input için gri arka plan */
+  border-color: #ddd; /* Devre dışı sınır rengi */
+  color: #aaa; /* Gri yazı */
+}
