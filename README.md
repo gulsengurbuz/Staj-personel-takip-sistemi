@@ -12,11 +12,8 @@ Dinamik istatistik kartları ve sayısal özet panelleri
 Güvenli kullanıcı doğrulama: token tabanlı oturum yönetimi, SHA-256 şifreleme ve işlem loglama
 
 Kullanılan Teknolojiler
-Frontend: HTML, CSS, Bootstrap, JavaScript (AJAX)
-
-Backend: PHP (prosedür bazlı geliştirme)
-
-Veritabanı: MySQL (prosedürler, fonksiyonlar, log sistemi)
-
-Diğer: FileZilla (sunucuya dosya aktarımı), Git (versiyon kontrol)
+HTML, CSS, Bootstrap, JavaScript (AJAX)
+PHP (prosedür bazlı geliştirme)
+MySQL (prosedürler, fonksiyonlar, log sistemi)
+FileZilla (sunucuya dosya aktarımı), Git (versiyon kontrol)
 
